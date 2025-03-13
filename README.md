@@ -2,6 +2,8 @@
 
 > Originally published to https://github.com/jakeread/mpc-for-additive-extrusion on March 10th, 2025 
 
+> Mirrored to https://gitlab.cba.mit.edu/jakeread/mpc-for-additive-extrusion on March 13th, 2025 
+
 > I hereby dedicate the contents of this disclosure to the public domain so that it may serve as prior art.  
 
 One of the key challenges when controlling extrusion based additive manufacturing equipment is to generate precise flowrates the nozzle, so that the width of the extruded track is geometrically accurate. This is especially challenging when a machine is changing speed and direction rapidly, because material flows have dynamical properties: filament in Fused Filament Fabrication (FFF) machines compress before they exit the nozzle, as do melt flows in pellet extruder, and gels and clays in syringe extruders. Without compensation for these effects, machines tend to under-extrude when they accelerate and over-extrude when they slow down. It is also difficult to know how fast a material can be extruded under different process parameters: when nozzle geometries, temperatures, or material compositions change, all of the extrudate's dynamic and static properties change along with it, presenting a challenge to machine builders and users. 
